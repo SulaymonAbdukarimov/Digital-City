@@ -1,0 +1,115 @@
+.photo-parent {
+  background-color: #160448;
+}
+
+.photo {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+
+.photo h2 {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #ffffff;
+  padding-bottom: 34px;
+}
+
+.gallery-grid {
+  display: grid;
+  border: 5px solid;
+  border-image: linear-gradient(to right top, #ad00ff, #00e0ff, blue);
+  border-image-slice: 1;
+  border-radius: 5px;
+}
+
+.gallery-item {
+  height: 384px;
+}
+
+.gallery-item.small {
+  height: 192px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery-item:nth-child(2),
+.gallery-item:nth-child(4),
+.gallery-item:nth-child(5) {
+  display: flex;
+}
+
+.gallery-item__box {
+  width: 100%;
+  height: 192px;
+}
+
+.gallery-item-double {
+  display: flex;
+  width: 100%;
+}
+
+.gallery-item-sigle {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: minmax(0, 401px) minmax(0, 679px) minmax(0, 320px);
+  }
+
+  .gallery-item:nth-child(4),
+  .gallery-item-double {
+    display: block;
+  }
+
+  .gallery-item:nth-child(2).small,
+  .gallery-item:nth-child(5).small {
+    height: 384px;
+  }
+
+  .gallery-item__box {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* .gallery-grid {
+    grid-template-columns: minmax(0, 370px) minmax(0, 679px) minmax(0, 250px);
+  } */
+
+  .gallery-item-double {
+    width: 67%;
+  }
+
+  .gallery-item-sigle {
+    display: block;
+    width: 33%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .gallery-grid {
+    grid-template-columns: minmax(0, 401px) minmax(0, 679px) minmax(0, 320px);
+  }
+}
+@media (max-width: 1200px) {
+  .photo {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .photo h2 {
+    text-align: center;
+    padding-top: 20px;
+  }
+}

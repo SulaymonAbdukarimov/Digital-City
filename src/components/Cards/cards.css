@@ -1,0 +1,85 @@
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 250px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 335px;
+  border: 5px solid;
+  border-image: linear-gradient(to right top, #da02ff, #68e1fd);
+  border-image-slice: 1;
+}
+
+.card-child h4 {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 168%;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+}
+.card-child p {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.1905px;
+  line-height: 168%;
+  letter-spacing: 0.14em;
+  color: #fff;
+}
+
+.carta {
+  position: relative;
+  background-color: #160448;
+}
+.carta img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 1200px) {
+  .carta img {
+    display: none;
+  }
+  .card-child {
+    margin: 15px;
+  }
+  .main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-cards {
+    padding-bottom: 60px;
+  }
+  .card-child {
+    height: 200px;
+  }
+  .card-child h4 {
+    font-size: 48px;
+  }
+  .card-child p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .main-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

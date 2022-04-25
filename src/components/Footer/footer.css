@@ -1,0 +1,197 @@
+.footer {
+  background-color: #131313;
+  height: 100%;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 66px;
+}
+.footerlogo {
+  width: 195.23px;
+  height: 137px;
+}
+.copyright {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.2653px;
+  line-height: 168%;
+  color: #ffffff;
+  opacity: 0.3;
+  margin-top: 48px;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.about {
+  width: 138px;
+}
+.about li {
+  text-align: center;
+}
+.about li:not(:first-child),
+.games li:not(:first-child) {
+  margin-top: 18px;
+}
+.about a,
+.games a,
+.email h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16.3767px;
+  line-height: 168%;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.about a:hover,
+.games a:hover {
+  color: rgb(67, 139, 207);
+}
+.email p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  color: #79cbce;
+}
+.email-input {
+  padding: 20px 10px;
+  width: 95%;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  outline: none;
+  border: 2px solid white;
+  background: transparent;
+  transform: skewX(-15deg);
+  color: white;
+}
+.footer-checkbox {
+  margin-left: 10px;
+}
+.footer-label {
+  margin-left: 10px;
+  color: white;
+}
+.email-input::placeholder {
+  color: white;
+}
+.footer-label span a {
+  color: white;
+  text-decoration: underline;
+}
+
+.write-email {
+  width: 100%;
+  position: relative;
+}
+
+.write-email i {
+  position: absolute;
+  top: 0px;
+  right: 3.5%;
+}
+
+.fa-regular {
+  font-size: 30px;
+  transform: skewX(-15deg);
+  color: white;
+  background: linear-gradient(to left bottom, #da04ff, #00e0ff);
+  padding: 8px 20px;
+  margin: 5px 1px;
+}
+@media (max-width: 992px) {
+  .main-footer {
+    width: 100%;
+    display: flex;
+  }
+  .logo,
+  .about,
+  .games,
+  .email {
+    width: 50%;
+  }
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .footer-icons > *:not(first-child) {
+    margin-left: 15px;
+  }
+  .footer {
+    padding: 0 10px;
+  }
+  .about,
+  .games {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+  }
+  .about li {
+    text-align: start;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-footer {
+    width: 100%;
+  }
+  .logo,
+  .about,
+  .games,
+  .email {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .about,
+  .games {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .about a,
+  .games a,
+  .email h4 {
+    font-size: 12px;
+    line-height: 0;
+  }
+  .main-footer {
+    padding-top: 40px;
+    padding: 0 10px;
+  }
+}
