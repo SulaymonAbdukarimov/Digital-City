@@ -1,0 +1,272 @@
+.fourth {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 230px;
+}
+.fourth-parent {
+  background-color: #160448;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  padding-top: 80px;
+}
+.main p {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #ffffff;
+}
+.miltiq {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-second {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 33;
+}
+
+.main li {
+  list-style-type: none;
+  margin-left: 56px;
+}
+
+.main a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.main a:hover {
+  border-bottom: 3px solid skyblue;
+  border-image: linear-gradient(to right top, blue, skyblue, blue);
+  border-image-slice: 1;
+}
+
+.pc1 {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+}
+
+.important {
+  position: relative;
+}
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.game-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game img {
+  border-radius: 10px;
+  width: 216px;
+  height: 214px;
+  z-index: 22;
+}
+
+.game h3 {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.2em;
+  width: 57px;
+  height: 43px;
+  color: #ffffff;
+}
+
+.game-content {
+  height: 61px;
+}
+.game-content h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.game-content p {
+  width: 143px;
+  height: 17px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.achki {
+  width: 602px;
+  height: 484px;
+  position: absolute;
+  top: 700px;
+  right: 0;
+}
+
+.fouth-btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-left: 16px;
+  background: none;
+  color: white;
+  padding: 14px 35px;
+  border: 3px solid;
+  border-image: linear-gradient(to right top, #ad00ff, #00e0ff, blue);
+  border-image-slice: 1;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: right;
+  cursor: pointer;
+}
+.fourth-btn-parent {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.miltiq2 {
+  position: absolute;
+  bottom: -20px;
+  left: 100px;
+  width: 976px;
+  height: 469px;
+}
+
+.main-bars-btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .miltiq2,
+  .pc1,
+  .achki,
+  .miltiq {
+    display: none;
+    visibility: none;
+  }
+  .main {
+    padding-top: 60px;
+  }
+
+  .main-second {
+    background-image: none;
+  }
+  .main-bars-btn {
+    display: none;
+  }
+  .fouth-btn {
+    margin-right: 20px;
+  }
+  .game-content h5 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .main p {
+    padding-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .fourth-btn-parent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .fouth-btn {
+    margin-top: 15px;
+  }
+
+  .fourth {
+    padding-bottom: 100px;
+  }
+  .game-content {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .game-content p {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .main-second {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-second li {
+    /* margin-top: 10px; */
+  }
+  .main {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fouth-btn {
+    font-size: 18px;
+    padding: 10px 24px;
+  }
+  .main-second li a {
+    font-size: 18px;
+  }
+  .main p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .game-content h5 {
+    font-size: 16px !important;
+  }
+  .fourth {
+    padding-bottom: 50px;
+  }
+  .game-first {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    padding-top: 10px;
+  }
+}

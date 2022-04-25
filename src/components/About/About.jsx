@@ -1,12 +1,12 @@
 import React from "react";
 import { data } from "./second.js";
 import { useEffect, useState } from "react";
-import "./second.css";
+import "./about.css";
 import cart1 from "../../img/cart1.png";
 import cart2 from "../../img/cart2.png";
 import cart3 from "../../img/cart3.png";
 
-function Second() {
+function About() {
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -57,4 +57,4 @@ function Second() {
   );
 }
 
-export default Second;
+export default About;

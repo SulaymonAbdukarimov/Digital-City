@@ -10,7 +10,7 @@ function Navbar() {
     <div>
       <nav>
         <div>
-          <img src={logo} alt="logo" />
+          <img className="nav-logo" src={logo} alt="logo" />
         </div>
 
         <ul className={`nav-list ${toggle && "activeBtn"}`}>
